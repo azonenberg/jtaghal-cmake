@@ -7,3 +7,6 @@
 [submodule "src/jtaghal-apps"]
 	path = src/jtaghal-apps
 	url = https://github.com/azonenberg/jtaghal-apps
+[submodule "lib/xptools"]
+	path = lib/xptools
+	url = https://github.com/azonenberg/xptools.git
