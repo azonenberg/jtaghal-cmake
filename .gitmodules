@@ -1,0 +1,9 @@
+[submodule "src/jtaghal"]
+	path = lib/jtaghal
+	url = https://github.com/azonenberg/jtaghal
+[submodule "src/log"]
+	path = lib/log
+	url = https://github.com/azonenberg/logtools
+[submodule "src/jtaghal-apps"]
+	path = src/jtaghal-apps
+	url = https://github.com/azonenberg/jtaghal-apps
