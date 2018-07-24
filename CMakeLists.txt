@@ -21,13 +21,10 @@ if(DJTG_LIB)
 endif()
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/lib/xptools")
-
 add_subdirectory("${PROJECT_SOURCE_DIR}/lib/log")
-
 add_subdirectory("${PROJECT_SOURCE_DIR}/lib/jtaghal")
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/src/jtaghal-apps/svfdumper")
-
 add_subdirectory("${PROJECT_SOURCE_DIR}/src/jtaghal-apps/jtagd")
-
 add_subdirectory("${PROJECT_SOURCE_DIR}/src/jtaghal-apps/jtagclient")
+add_subdirectory("${PROJECT_SOURCE_DIR}/src/jtaghal-apps/jtagsh")
