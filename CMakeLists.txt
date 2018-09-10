@@ -3,6 +3,7 @@ project(jtaghal)
 set(CMAKE_BUILD_TYPE Release)
 
 # Find JTAG drivers
+find_library(USB_LIB usb-1.0)
 find_library(FTD2XX_LIB ftd2xx)
 find_library(DJTG_LIB djtg)
 
@@ -18,6 +19,12 @@ add_custom_target(
 
 set(CMAKE_C_FLAGS "-g -Wall -Wextra -fsanitize=address")
 set(CMAKE_CXX_FLAGS "-g -Wall -Wextra -fsanitize=address")
+
+if(USB_LIB)
+    message(STATUS "Enabling libusb backend")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DHAVE_LIBUSB")
+    set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -DHAVE_LIBUSB")
+endif()
 
 if(FTD2XX_LIB)
     message(STATUS "Enabling FTDI backend (using D2XX blob)")
