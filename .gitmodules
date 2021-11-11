@@ -1,12 +1,12 @@
 [submodule "src/jtaghal"]
 	path = lib/jtaghal
-	url = https://github.com/azonenberg/jtaghal
+	url = ../jtaghal.git
 [submodule "src/log"]
 	path = lib/log
-	url = https://github.com/azonenberg/logtools
+	url = ../logtools.git
 [submodule "src/jtaghal-apps"]
 	path = src/jtaghal-apps
-	url = https://github.com/azonenberg/jtaghal-apps
+	url = ../jtaghal-apps.git
 [submodule "lib/xptools"]
 	path = lib/xptools
-	url = https://github.com/azonenberg/xptools.git
+	url = ../xptools.git
